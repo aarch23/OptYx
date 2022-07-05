@@ -1,3 +1,2 @@
 # OptyX
-'STRIKE DISTANCE' <= 12.00 & 'STRIKE DISTANCE' > -3.00
-'DTE' <= 11.0
+As of 7/5 SpyDataRawV4 has inflation + Sentiment 

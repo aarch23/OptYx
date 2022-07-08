@@ -1,0 +1,10 @@
+Q421 + Q122
+test_2qs = df.iloc[6095:9753]
+w/ IV, w/ Inflation, w/out VIX, w/out Sentiment 
+XGBoost
+{'colsample_bytree': 0.845526268061734, 'gamma': 7.46261958048576, 'max_depth': 7.0, 'min_child_weight': 5.0, 'reg_alpha': 59.0, 'reg_lambda': 0.5276170258359502}
+
+    0.7167851284855112
+    Weighted Precision: 0.72
+    Weighted Recall: 0.72
+    Weighted F1-score: 0.71

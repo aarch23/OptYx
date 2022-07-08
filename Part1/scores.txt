@@ -1,7 +1,17 @@
 Q421 + Q122
 test_2qs = df.iloc[6095:9753]
-w/ IV, w/ Inflation, w/out VIX, w/out Sentiment 
+Features included: SPY PRICE, DTE, C_DELT, C_GAMMA, C_VEGA, C_THETA, C_RHO, C_IV, C_VOLUME, C_LAST, STRIKE, STRIKE_DISTANCE_PCT, STRIKE DISTANCE, INFLATION%
+Features not included: VIX, SENTIMENT
 XGBoost with: {'colsample_bytree': 0.845526268061734, 'gamma': 7.46261958048576, 'max_depth': 7.0, 'min_child_weight': 5.0, 'reg_alpha': 59.0, 'reg_lambda': 0.5276170258359502}
+Y Classification:
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] <= -30, "y"] = 0
+
+    q4_21_q1_22.loc[(q4_21_q1_22["ROI %"] <= 25) & (q4_21_q1_22["ROI %"] > -30), "y"] = 1
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] > 25, "y"] = 2
+
+Score:
 
     0.7167851284855112
     Weighted Precision: 0.72
@@ -18,6 +28,5 @@ XGBoost with: {'colsample_bytree': 0.845526268061734, 'gamma': 7.46261958048576,
    macro avg       0.73      0.68      0.69      3658
 weighted avg       0.72      0.72      0.71      3658
 
-
------
+---------------------------------------------------------------------
 

@@ -2,7 +2,7 @@ Q421 + Q122
 test_2qs = df.iloc[6095:9753]
 Features included: SPY PRICE, DTE, C_DELT, C_GAMMA, C_VEGA, C_THETA, C_RHO, C_IV, C_VOLUME, C_LAST, STRIKE, STRIKE_DISTANCE_PCT, STRIKE DISTANCE, INFLATION%
 Features not included: VIX, SENTIMENT
-XGBoost with: {'colsample_bytree': 0.845526268061734, 'gamma': 7.46261958048576, 'max_depth': 7.0, 'min_child_weight': 5.0, 'reg_alpha': 59.0, 'reg_lambda': 0.5276170258359502}
+xgb_model = xgb.XGBClassifier(colsample_bytree=0.7057510776826552, gamma=6.21721975564087, max_depth=14, min_child_weight=6.0, reg_alpha=23, reg_lambda=0.9964300898948159) 
 Y Classification:
 
     q4_21_q1_22.loc[q4_21_q1_22["ROI %"] <= -30, "y"] = 0
@@ -11,22 +11,130 @@ Y Classification:
 
     q4_21_q1_22.loc[q4_21_q1_22["ROI %"] > 25, "y"] = 2
 
-Score:
 
-    0.7167851284855112
-    Weighted Precision: 0.72
-    Weighted Recall: 0.72
-    Weighted F1-score: 0.71
-    
-                  precision    recall  f1-score   support
 
-        Sell       0.70      0.89      0.78      1643
-        Pass       0.72      0.56      0.63      1182
-         Buy       0.76      0.59      0.67       833
+SCORE:
+
+0.722252597047567
+Weighted Precision: 0.73
+Weighted Recall: 0.72
+Weighted F1-score: 0.71
+              precision    recall  f1-score   support
+
+        Sell       0.71      0.90      0.79      1643
+        Pass       0.74      0.59      0.66      1182
+         Buy       0.73      0.56      0.64       833
 
     accuracy                           0.72      3658
-   macro avg       0.73      0.68      0.69      3658
-weighted avg       0.72      0.72      0.71      3658
+   macro avg       0.73      0.68      0.70      3658
+weighted avg       0.73      0.72      0.71      3658
 
+[[1473  130   40]
+ [ 352  699  131]
+ [ 247  116  470]]
+ 
 ---------------------------------------------------------------------
+Q421 + Q122
+test_2qs = df.iloc[6095:9753]
+Features included: SPY PRICE, DTE, C_DELT, C_GAMMA, C_VEGA, C_THETA, C_RHO, C_IV, C_VOLUME, C_LAST, STRIKE, STRIKE_DISTANCE_PCT, STRIKE DISTANCE, INFLATION%
+Features not included: VIX, SENTIMENT
+xgb_model = xgb.XGBClassifier(colsample_bytree=0.7248608654812747, gamma=7.555556085398705, max_depth=13, min_child_weight=2.0, reg_alpha=23, reg_lambda=0.5598177626614345) 
 
+Y Classification:
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] <= -30, "y"] = 0
+
+    q4_21_q1_22.loc[(q4_21_q1_22["ROI %"] <= 25) & (q4_21_q1_22["ROI %"] > -30), "y"] = 1
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] > 25, "y"] = 2
+
+
+
+SCORE:
+
+
+0.7277200656096228
+Weighted Precision: 0.73
+Weighted Recall: 0.73
+Weighted F1-score: 0.72
+              precision    recall  f1-score   support
+
+        Sell       0.74      0.87      0.80      1643
+        Pass       0.74      0.61      0.67      1182
+         Buy       0.70      0.61      0.65       833
+
+    accuracy                           0.73      3658
+   macro avg       0.72      0.70      0.70      3658
+weighted avg       0.73      0.73      0.72      3658
+
+[[1436  135   72]
+ [ 314  718  150]
+ [ 202  123  508]]
+ 
+ 
+ ---------------------------------------------------------------------
+Q421 + Q122
+Validation begins at 2021-10-20 11:30:00, validation stops at 2021-11-29 15:00:00
+Features included: SPY PRICE, DTE, C_DELT, C_GAMMA, C_VEGA, C_THETA, C_RHO, C_IV, C_VOLUME, C_LAST, STRIKE, STRIKE_DISTANCE_PCT, STRIKE DISTANCE, INFLATION%
+Features not included: VIX, SENTIMENT
+xgb_model = xgb.XGBClassifier(colsample_bytree=0.7422991668290944, gamma=5.890281768504151, max_depth=11, min_child_weight=4.0, reg_alpha=43, reg_lambda=0.34523382875404096) 
+
+Y Classification:
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] <= -30, "y"] = 0
+
+    q4_21_q1_22.loc[(q4_21_q1_22["ROI %"] <= 25) & (q4_21_q1_22["ROI %"] > -30), "y"] = 1
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] > 25, "y"] = 2
+    
+SCORE:
+
+0.5931091058244463
+Weighted Precision: 0.61
+Weighted Recall: 0.59
+Weighted F1-score: 0.59
+              precision    recall  f1-score   support
+
+        Sell       0.65      0.60      0.62      1840
+        Pass       0.50      0.70      0.58      1034
+         Buy       0.66      0.44      0.53       783
+
+    accuracy                           0.59      3657
+   macro avg       0.60      0.58      0.58      3657
+weighted avg       0.61      0.59      0.59      3657
+
+[[1105  571  164]
+ [ 303  720   11]
+ [ 290  149  344]]
+ 
+---------------------------------------------------------------------
+Q421 + Q122
+Validation begins at 2021-11-03 14:00:00, validation stops at 2021-12-07 12:00:00
+Features included: SPY PRICE, DTE, C_DELT, C_GAMMA, C_VEGA, C_THETA, C_RHO, C_IV, C_VOLUME, C_LAST, STRIKE, STRIKE_DISTANCE_PCT, STRIKE DISTANCE, INFLATION%
+Features not included: VIX, SENTIMENT
+xgb_model = xgb.XGBClassifier(colsample_bytree=0.7589698434789055, gamma=6.784133112576028, max_depth=17, min_child_weight=4.0, reg_alpha=50.0, reg_lambda=0.21676727935309242) 
+
+Y Classification:
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] <= -30, "y"] = 0
+
+    q4_21_q1_22.loc[(q4_21_q1_22["ROI %"] <= 25) & (q4_21_q1_22["ROI %"] > -30), "y"] = 1
+
+    q4_21_q1_22.loc[q4_21_q1_22["ROI %"] > 25, "y"] = 2
+ 
+
+SCORE:
+
+0.43122778233524744
+Weighted Precision: 0.78
+Weighted Recall: 0.43
+Weighted F1-score: 0.43
+              precision    recall  f1-score   support
+
+        Sell       0.99      0.26      0.41      2414
+        Pass       0.41      0.71      0.52       878
+         Buy       0.22      0.92      0.35       365
+
+    accuracy                           0.43      3657
+   macro avg       0.54      0.63      0.43      3657
+weighted avg       0.78      0.43      0.43      3657

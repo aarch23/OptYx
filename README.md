@@ -1,12 +1,11 @@
 # OptyX
 As of 7/5 SpyDataRawV4 has inflation + Sentiment 
 
-
 ______________________________
 
-Start: 
+Disclaimer:
 
-Within the OptyX repo - you will see numerous versions of notebooks & csv files - These have been left to show that there were multiple iterations of code restructuring and data formatting that took place before our final versions.
+Within the OptyX repo - you will notice numerous versions of notebooks & csv files - These remain to demonstrate that there were multiple iterations of code restructuring and data formatting that took place before our final versions.
 
 Data Gathering: 
 
@@ -26,12 +25,10 @@ Some insight into the data & filtering process:
 	- We held onto the contract for 3 days, until Wed @ Close - This was done to monitor the max effect & change in the Greeks. Wanted to see if that produced any insights into the value of the option contract. 
 	- Recalculated the Strike Distance formula to showcase negative values (for ITM contracts) (Made easier to filter)
 
-
 	Introduced some features 
 	- Inflation data (MoM increase - duplicated over a month to populate all rows
 	- ROI % of a contract
 	- Defined categories for our Target Variable (y)
-
 
 0 = Strong Sell
 1 = Sell
@@ -46,7 +43,6 @@ Some insight into the data & filtering process:
 3 is (> 10% to < 60%)
 4 is (> 60% to < 80%)
 5 is (> 100%)
-  
 
 Combined SPY, VIX, Inflation, Sentiment data --> then fed into ML Model. 
 

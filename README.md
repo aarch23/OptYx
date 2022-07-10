@@ -54,4 +54,4 @@ _________________________________
 
 Part 2: Binomial Option Pricing Tree 
 
-The code in this folder is an example of what the Binomial Model will be utilized for next: To understand the different probabilities assigned to a upward and downward move in the price of SPY. Using this, we hope/will be able to get a better understanding of our Risk at each time step (Day 1, 2, 3) - and will be able to see our Expected Value and evaluate Risk accordingly. This will serve as a "blueprint/guide???"  to knowing when to potentially take profit/exit a trade. ![image](https://user-images.githubusercontent.com/100783805/178165157-b53b29b8-444e-4c08-939a-5df594b8a7b8.png)
+The code in this folder is an example of what the Binomial Model will be utilized for next: To understand the different probabilities assigned to a upward and downward move in the price of SPY. Using this, we hope/will be able to get a better understanding of our Risk at each time step (Day 1, 2, 3) - and will be able to see our Expected Value and evaluate Risk accordingly. This will serve as a "blueprint/guide???"  to knowing when to potentially take profit/exit a trade. 

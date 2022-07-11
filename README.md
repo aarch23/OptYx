@@ -13,7 +13,7 @@ The data gathering process for both VIX & SPY option contracts data i.e. (Strike
 
 We decided to look at 6 months worth of historical data from October 2021 (Q4) to March 2022 (Q1) 
 
-The data was downloaded in the form of text files, with each month of data being a separate txt file. We then had to import/convert them into DataFrames before filtering them to our desired choice? , before then exporting them into their individual csv's & concatting/combining them into one large dataset. 
+The data was downloaded in the form of text files, with each month of data being a separate txt file. We then had to convert them into DataFrames before further filtering them. Once the data was formatted accordingly we were able to save it as individual csv files and concatenate them into one large dataset. 
 
 Some insight into the data & filtering process:
 
@@ -30,19 +30,22 @@ Some insight into the data & filtering process:
 	- ROI % of a contract
 	- Defined categories for our Target Variable (y)
 
-	0 = Strong Sell | (< - 60%)
-	1 = Sell 	| (> -60% to < -10%)
-	2 = Pass	| (> -10% to 10%)
-	3 = Buy 	| (> 10% to < 60%)
-	4 = Strong Buy  | (> 60% to < 80%)| 
-	5 = Very High Return | (> 100%)
+	0 = Strong Sell		| (< - 60%)
+	1 = Sell 		| (> -60% to < -10%)
+	2 = Pass		| (> -10% to 10%)
+	3 = Buy 		| (> 10% to < 60%)
+	4 = Strong Buy  	| (> 60% to < 80%)| 
+	5 = Very High Return    | (> 100%)
 
 
 
-Combined SPY, VIX, Inflation, Sentiment data --> then fed into ML Model. 
+After we combined SPY, VIX, Inflation, Sentiment data we then ran it in our into ML Model. 
 
 _________________________________
 
 Part 2: Binomial Option Pricing Tree 
 
-The code in this folder is an example of what the Binomial Model will be utilized for next: To understand the different probabilities assigned to a upward and downward move in the price of SPY. Using this, we hope/will be able to get a better understanding of our Risk at each time step (Day 1, 2, 3) - and will be able to see our Expected Value and evaluate Risk accordingly. This will serve as a "blueprint/guide???"  to knowing when to potentially take profit/exit a trade. 
+The code in this folder is an example of what the Binomial Model which will be deployed in our later development. 
+Our machine learninng process produces unique probabilities to each target outcome. 
+By using these probabilities we will understand the R/R of the contract at each upward/downward move in the underlying. 
+Using this model will allow the user to understand how the contract prices behave, and when R/R values change to a point where some exposure needs to be reduced/ added to support the strategy. 

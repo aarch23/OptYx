@@ -1,6 +1,8 @@
+# __OptyX: Machine Learning__
+
 Disclaimer:
 
-Within the OptyX repo - you will notice numerous versions of notebooks & csv files - These remain to demonstrate that there were multiple iterations of code restructuring and data formatting that took place before our final versions.
+Within the OptyX repository, you will notice numerous versions of different Jupyter notebooks & csv files - These remain to demonstrate that there were multiple iterations of code restructuring and data formatting that took place before our final versions.
 
 Data Gathering: 
 
@@ -39,9 +41,10 @@ After we combined SPY, VIX, Inflation, Sentiment data we then ran it in our into
 
 _________________________________
 
-Part 2: Binomial Option Pricing Tree 
+Contributors: 
 
-The code in this folder is an example of what the Binomial Model which will be deployed in our later development. 
-Our machine learninng process produces unique probabilities to each target outcome. 
-By using these probabilities we will understand the R/R of the contract at each upward/downward move in the underlying. 
-Using this model will allow the user to understand how the contract prices behave, and when R/R values change to a point where some exposure needs to be reduced/ added to support the strategy. 
+Bar, Kfir
+Malhotra, Aarchit
+Naqvi, Aliza
+Roberts, Nicole
+Rosa, Wilson

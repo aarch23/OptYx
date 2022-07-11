@@ -9,7 +9,7 @@ Within the OptyX repo - you will notice numerous versions of notebooks & csv fil
 
 Data Gathering: 
 
-The  data gathering process for both VIX (prices) & SPY (option contracts data) i.e. (Strike Price, SPY Price, Greeks, Expiration, Call Last Price etc.) was directly pulled from optionsdx.com website - This website provides a suite of historical options data. 
+The data gathering process for both VIX & SPY option contracts data i.e. (Strike Price, SPY Price, Greeks, Expiration, Call Last Price etc.) was directly pulled from optionsdx.com website - This website provides a suite of historical options data. 
 
 We decided to look at 6 months worth of historical data from October 2021 (Q4) to March 2022 (Q1) 
 
@@ -30,19 +30,14 @@ Some insight into the data & filtering process:
 	- ROI % of a contract
 	- Defined categories for our Target Variable (y)
 
-0 = Strong Sell
-1 = Sell
-2 = Pass
-3 = Buy
-4 = Strong Buy
-5 = Very High Return 
+	0 = Strong Sell | (< - 60%)
+	1 = Sell 	| (> -60% to < -10%)
+	2 = Pass	| (> -10% to 10%)
+	3 = Buy 	| (> 10% to < 60%)
+	4 = Strong Buy  | (> 60% to < 80%)| 
+	5 = Very High Return | (> 100%)
 
-0 is (< - 60%)
-1 is (> -60% to < -10%)
-2 is (> -10% to 10%)
-3 is (> 10% to < 60%)
-4 is (> 60% to < 80%)
-5 is (> 100%)
+
 
 Combined SPY, VIX, Inflation, Sentiment data --> then fed into ML Model. 
 

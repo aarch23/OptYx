@@ -85,13 +85,13 @@ The goal was to track market sentiment as reflected in tweets from Twitter. Trac
 
 ## __PART 1: Machine Learning__
 
-Please refer to the README.md within folder **"Part1"** for the machine learning aspect of the OptyX product. Provided instructions detailed in this README.md will guide the user through navigating and comprehending the machine learning aspect of OptyX technology.
+Please refer to the README.md within folder **'Part1'** for the machine learning aspect of the OptyX product. Provided instructions detailed in this README.md will guide the user through navigating and comprehending the machine learning aspect of OptyX technology.
 
 ---
 
 ## __PART 2: Binomial Option Pricing Trees__
 
-Please refer to the README.md within the folder labeled, "Part2", to learn about future developments for OptyX.
+Please refer to the README.md within the folder labeled, __'Part2'__, to learn about future developments for OptyX.
 
 ---
 

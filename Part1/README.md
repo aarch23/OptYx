@@ -2,7 +2,9 @@
 
 # __OptyX: Machine Learning__
 
-The proprietary OptyX technology implements machine learning as a means of predicting the percent profit or loss of a weekly call option's contract at two days until expiration using option contract variables (present call option price, strike price, underlying asset price, the Greeks, implied volatility, and volume), along with VIX prices, inflation percent, and various sentiment metrics. The predicted profit or loss, the 'y' outcome, is classified into the following three classes: ['0'] a loss of a contract's value greater than 30%, which constitutes a "Sell to Open" recommendation, ['1'] a change in a contract's value between -30% and 25%, which constitutes a "Pass" recommendation, and finally ['2'] a gain in a contract's value greater than 25%, which constitutes a "Buy to Open" recommendation.
+The proprietary OptyX technology implements machine learning as a means of predicting the percent profit or loss of a weekly call option's contract at two days until expiration using option contract variables (present call option price, strike price, underlying asset price, the Greeks, implied volatility, and volume), along with VIX prices, inflation percent, and various sentiment metrics. 
+
+The predicted profit or loss, the 'y' outcome, is classified into the following three classes: ['0'] a loss of a contract's value greater than 30%, which constitutes a "Sell to Open" recommendation, ['1'] a change in a contract's value between -30% and 25%, which constitutes a "Pass" recommendation, and finally ['2'] a gain in a contract's value greater than 25%, which constitutes a "Buy to Open" recommendation.
 
 This section of the OptyX repo contains the notebooks used for the machine learning aspect of the OptyX product. The following instructions will guide the user through the process of installing  necessary libraries and running the applicable Jupyter notebooks, as well as provide a step-by-step explanation of the code's usage. 
 
@@ -54,6 +56,8 @@ Next, the same process is repeated with XGBoost, another model that consisently 
 ![Classification report.](images/report.png)
 
 Further, here is the feature importance plot for the XGBoost model:
+
+![Features plot.](images/features.png)
 
 Probabilities of predictions are additionaly determined and placed in a Pandas DataFrame for comparison with 'Actual' values. Worthy of note, *the XGBoost model remains the top performer for overall accuracy when tuned via Bayesian Optimization with HYPEROPT.* 
 

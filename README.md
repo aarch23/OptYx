@@ -1,8 +1,3 @@
-# OptyX
-As of 7/5 SpyDataRawV4 has inflation + Sentiment 
-
-______________________________
-
 Disclaimer:
 
 Within the OptyX repo - you will notice numerous versions of notebooks & csv files - These remain to demonstrate that there were multiple iterations of code restructuring and data formatting that took place before our final versions.

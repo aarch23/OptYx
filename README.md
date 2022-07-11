@@ -1,10 +1,14 @@
 # __OptyX: Machine Learning__
 
+---
+
 Disclaimer:
 
 Within the OptyX repository, you will notice numerous versions of different Jupyter notebooks & csv files - These remain to demonstrate that there were multiple iterations of code restructuring and data formatting that took place before our final versions.
 
-Data Gathering: 
+---
+
+# __OptyX: Data Gathering__ 
 
 The data gathering process for both VIX & SPY option contracts data i.e. (Strike Price, SPY Price, Greeks, Expiration, Call Last Price etc.) was directly pulled from optionsdx.com website - This website provides a suite of historical options data. 
 
@@ -36,10 +40,19 @@ Some insight into the data & filtering process:
 		5 = Very High Return    | (> 100%)
 
 
-
 After we combined SPY, VIX, Inflation, Sentiment data we then ran it in our into ML Model. 
 
-_________________________________
+---
+
+## __PART 1: Machine Learning__
+
+Please consult the README.md within folder **'Part1'** for the machine learning aspect of the OptyX product. Provided instructions detailed in this README.md will guide the user through navigating and comprehending the machine learning aspect of OptyX technology.
+
+## __PART 1: Binomial Pricing Model__
+
+Please consult the README.md within folder **'Part2'** to understand the next steps for this project. 
+
+---
 
 Contributors: 
 

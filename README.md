@@ -1,4 +1,4 @@
-<img src= "images/optyx.png" width="930" height="300">
+![image](https://user-images.githubusercontent.com/100783805/178174658-b394e63d-d224-41fc-9e4e-3bbac8edabfd.png)
 
 # __OptyX: Overview__
 

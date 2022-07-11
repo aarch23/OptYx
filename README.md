@@ -62,6 +62,16 @@ We then introduced a few unique features:
 - Defined categories for our Target Variable (y) according to the following criteria:['0'] a loss of a contract's value greater than 30%, which constitutes a "Sell to Open" recommendation;
 ['1'] a change in a contract's value between -30% and 25%, which constitutes a "Pass" recommendation; and ['2'] a gain in a contract's value greater than 25%, which constitutes a "Buy to Open" recommendation.
 
+## __Sentiment Analysis__ 
+
+`!pip install tweepy`
+`!pip install wordcloud`
+
+* [tweepy](https://github.com/tweepy/tweepy) - Tweepy is an open-sourced, easy-to-use Python library for accessing the Twitter API.
+* [NLTK](https://github.com/nltk/nltk) - Natural Language Toolkit - suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing.
+
+Please refer to the folder titled "sentiment" and the file "sentiment-Copy9.ipynb. Our goal was to track market sentiment as reflected in tweets from January 1 to March 31. We used the search words  “S&P 500 and stocks”, and were then able to pull over 30,000 tweets. We collected the tweets into a dataframe and cleaned them and fed them to the NLTK Vader Model, which a sentiment analysis tool that is specifically attuned to sentiments expressed in social media. Each tweet passed through the model and was assigned a composite score from -1 most negative to 1, most positive. To get a number for daily market sentiment, we averaged the composite scores for each day. 
+
 ---
 ## __PART 1: Machine Learning__
 

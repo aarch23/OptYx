@@ -76,8 +76,8 @@ Please consult the README.md within folder 'Part2' to understand the next steps 
 
 ## __Contributors__
 
-Bar, Kfir
-Malhotra, Aarchit
-Naqvi, Aliza
-Roberts, Nicole
-Rosa, Wilson
+Kfir Bar,
+Aarchit Malhotra,
+Aliza Naqvi,
+Nicole Roberts,
+Wilson Rosa

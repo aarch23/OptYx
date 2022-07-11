@@ -49,7 +49,7 @@ Using 10-fold cross validation of the training set, various models are fit to th
 
 Random Forest Classification, a model that consisently performs well for OptyX use, is then further investigated with two approaches, 'A' and 'B', to hyperparameter tuning. After optimal hyperparameters are determined, the model is fit to the dataset with the ideal parameters. Predictions are made and various evaluation metrics are generated, including a confusion matrix for visual reference and a ROC AUC score. Note, predictions are made for both the training and validation sets. Feature importance is determined and plotted.
 
-Next, the same process is repeated for XGBoost, another model that consisently performs well for OptyX use. Probabilities of predictions are additionaly determined and placed in a Pandas DataFrame for comparison with 'Acutal' values. Worthy of note, *the XGBoost model remains the top performer for overall accuracy when tuned via Bayesian Optimization with HYPEROPT.* 
+Next, the same process is repeated for XGBoost, another model that consisently performs well for OptyX use. Probabilities of predictions are additionaly determined and placed in a Pandas DataFrame for comparison with 'Actual' values. Worthy of note, *the XGBoost model remains the top performer for overall accuracy when tuned via Bayesian Optimization with HYPEROPT.* 
 
 Finally, the K-Nearest Neighbors model is evaluated as well with hyperparameter tuning. 
 
